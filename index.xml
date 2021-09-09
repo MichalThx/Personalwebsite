@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michał&#39;s website</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Michał&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Aug 2021 21:14:30 +0200</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Wed, 01 Sep 2021 18:05:06 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>How to contact me?
+Using the email: me (at) michalszwedo.com</description>
+    </item>
+    
+    <item>
+      <title>The reasons for choosing Hugo in making new website?</title>
+      <link>http://example.org/posts/new_website_in_hugo/</link>
+      <pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate>
+      
+      <guid>http://example.org/posts/new_website_in_hugo/</guid>
+      <description>Why would you choose hugo for a website?</description>
+    </item>
+    
+  </channel>
+</rss>
