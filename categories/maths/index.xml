@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maths on Michał&#39;s website</title>
+    <link>https://michalszwedo.com/categories/maths/</link>
+    <description>Recent content in Maths on Michał&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Sep 2021 20:15:54 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/categories/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Maths Algorithms</title>
+      <link>https://michalszwedo.com/posts/living_with_math_and_algorithms/</link>
+      <pubDate>Mon, 13 Sep 2021 20:15:54 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_math_and_algorithms/</guid>
+      <description>Safe average of two numbers? The obvious solution $(a + b) / 2$
+This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume the a and b are maximum Integer values available. This makes their sum to be over the capacity. Yielding the incorrect values.
+One could also cast to the more capable type (int -&amp;gt; long) but this is only move the problem a bit, doesn&amp;rsquo;t solve it.</description>
+    </item>
+    
+  </channel>
+</rss>

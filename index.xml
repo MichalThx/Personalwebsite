@@ -1,2 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Michał's website</title><link>https://michalszwedo.com/</link><description>Recent content on Michał's website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Aug 2021 21:14:30 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://michalszwedo.com/about/</link><pubDate>Wed, 01 Sep 2021 18:05:06 +0000</pubDate><guid>https://michalszwedo.com/about/</guid><description>How to contact me?
-Using the email: me (at) michalszwedo.com</description></item><item><title>The reasons for choosing Hugo in making new website?</title><link>https://michalszwedo.com/posts/new_website_in_hugo/</link><pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate><guid>https://michalszwedo.com/posts/new_website_in_hugo/</guid><description>Why would you choose hugo for a website?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michał&#39;s website</title>
+    <link>https://michalszwedo.com/</link>
+    <description>Recent content on Michał&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Sep 2021 20:15:54 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Maths Algorithms</title>
+      <link>https://michalszwedo.com/posts/living_with_math_and_algorithms/</link>
+      <pubDate>Mon, 13 Sep 2021 20:15:54 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_math_and_algorithms/</guid>
+      <description>Safe average of two numbers? The obvious solution $(a + b) / 2$
+This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume the a and b are maximum Integer values available. This makes their sum to be over the capacity. Yielding the incorrect values.
+One could also cast to the more capable type (int -&amp;gt; long) but this is only move the problem a bit, doesn&amp;rsquo;t solve it.</description>
+    </item>
+    
+    <item>
+      <title>Living With Git - How to do things in Git</title>
+      <link>https://michalszwedo.com/posts/living_with_git/</link>
+      <pubDate>Sun, 12 Sep 2021 20:36:19 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_git/</guid>
+      <description>How to deal with changing git commits date? First of all, there are two dates in a commit. Author date and commit date. As descriptive they are, let make it clear. Author date - the date of sb creating the change - &amp;ldquo;authoring&amp;rdquo; Commit date - the date of sb commiting - &amp;ldquo;pushing&amp;rdquo; the change on to the repo
+How to change those dates? The author date - using either</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://michalszwedo.com/about/</link>
+      <pubDate>Wed, 01 Sep 2021 18:05:06 +0000</pubDate>
+      
+      <guid>https://michalszwedo.com/about/</guid>
+      <description>How to contact me? Using the email: me (at) michalszwedo.com</description>
+    </item>
+    
+    <item>
+      <title>Solving LeetCode 18 - 4sum - Java and Python</title>
+      <link>https://michalszwedo.com/posts/leetcode18/</link>
+      <pubDate>Sun, 29 Aug 2021 16:15:24 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/leetcode18/</guid>
+      <description>The question Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+ 0 &amp;lt;= a, b, c, d &amp;lt; n a, b, c, and d are distinct. nums[a] + nums[b] + nums[c] + nums[d] == target  You may return the answer in any order.
+Example 1 Input: nums = [1,0,-1,0,-2,2], target = 0 Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]] Example 2 Input: nums = [2,2,2,2,2], target = 8 Output: [[2,2,2,2]] Constraints  1 &amp;lt;= nums.</description>
+    </item>
+    
+  </channel>
+</rss>

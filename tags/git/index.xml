@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Michał&#39;s website</title>
+    <link>https://michalszwedo.com/tags/git/</link>
+    <description>Recent content in git on Michał&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Sep 2021 20:36:19 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Living With Git - How to do things in Git</title>
+      <link>https://michalszwedo.com/posts/living_with_git/</link>
+      <pubDate>Sun, 12 Sep 2021 20:36:19 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_git/</guid>
+      <description>How to deal with changing git commits date? First of all, there are two dates in a commit. Author date and commit date. As descriptive they are, let make it clear. Author date - the date of sb creating the change - &amp;ldquo;authoring&amp;rdquo; Commit date - the date of sb commiting - &amp;ldquo;pushing&amp;rdquo; the change on to the repo
+How to change those dates? The author date - using either</description>
+    </item>
+    
+  </channel>
+</rss>
