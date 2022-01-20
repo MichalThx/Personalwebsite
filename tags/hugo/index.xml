@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Michał's website</title><link>https://michalszwedo.com/tags/hugo/</link><description>Recent content in Hugo on Michał's website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Aug 2021 21:14:30 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>The reasons for choosing Hugo in making new website?</title><link>https://michalszwedo.com/posts/new_website_in_hugo/</link><pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate><guid>https://michalszwedo.com/posts/new_website_in_hugo/</guid><description>Why would you choose hugo for a website?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Michał&#39;s website</title>
+    <link>https://michalszwedo.com/tags/hugo/</link>
+    <description>Recent content in Hugo on Michał&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Aug 2021 21:14:30 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How and why - Hugo?</title>
+      <link>https://michalszwedo.com/posts/living_with_hugo/</link>
+      <pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_hugo/</guid>
+      <description>Parameters for local dev environment hugo server -D # Running localhost server - localhost:1313 # -D is responsible for displaying Draft articles on the localhost  # even if they are in the `draft: true` state. hugo # Compiling website into /public Easiest way of deploying only the /public folder with git  Delete public dir and create it again Clone the remote repo with &amp;ldquo;.&amp;rdquo; add the end to unpack in the new public folder  git clone git@github.</description>
+    </item>
+    
+  </channel>
+</rss>

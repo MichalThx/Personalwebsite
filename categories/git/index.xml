@@ -14,7 +14,7 @@
       
       <guid>https://michalszwedo.com/posts/living_with_git/</guid>
       <description>How to deal with changing git commits date? First of all, there are two dates in a commit. Author date and commit date. As descriptive they are, let make it clear. Author date - the date of sb creating the change - &amp;ldquo;authoring&amp;rdquo; Commit date - the date of sb commiting - &amp;ldquo;pushing&amp;rdquo; the change on to the repo
-How to change those dates? The author date - using either</description>
+How to change dates? Changing committer date The author date - using either</description>
     </item>
     
   </channel>

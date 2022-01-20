@@ -8,14 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Sep 2021 20:15:54 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Simple Maths Algorithms</title>
+      <title>Simple Algorithms</title>
       <link>https://michalszwedo.com/posts/living_with_math_and_algorithms/</link>
       <pubDate>Mon, 13 Sep 2021 20:15:54 +0200</pubDate>
       
       <guid>https://michalszwedo.com/posts/living_with_math_and_algorithms/</guid>
-      <description>Safe average of two numbers? The obvious solution $(a + b) / 2$
-This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume the a and b are maximum Integer values available. This makes their sum to be over the capacity. Yielding the incorrect values.
-One could also cast to the more capable type (int -&amp;gt; long) but this is only move the problem a bit, doesn&amp;rsquo;t solve it.</description>
+      <description>Safe average of two numbers Obvious solution $(a + b) / 2$
+This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume a and b are the maximum Integer values available (in Java it would be 2147483647). The sum would be over the maximal value. Yielding the incorrect result. One could also cast to the the bigger type (e.g from int to long) but this is not a solution.</description>
     </item>
     
     <item>
@@ -25,7 +24,7 @@ One could also cast to the more capable type (int -&amp;gt; long) but this is on
       
       <guid>https://michalszwedo.com/posts/living_with_git/</guid>
       <description>How to deal with changing git commits date? First of all, there are two dates in a commit. Author date and commit date. As descriptive they are, let make it clear. Author date - the date of sb creating the change - &amp;ldquo;authoring&amp;rdquo; Commit date - the date of sb commiting - &amp;ldquo;pushing&amp;rdquo; the change on to the repo
-How to change those dates? The author date - using either</description>
+How to change dates? Changing committer date The author date - using either</description>
     </item>
     
     <item>
@@ -34,7 +33,16 @@ How to change those dates? The author date - using either</description>
       <pubDate>Wed, 01 Sep 2021 18:05:06 +0000</pubDate>
       
       <guid>https://michalszwedo.com/about/</guid>
-      <description>How to contact me? Using the email: me (at) michalszwedo.com</description>
+      <description>How to contact me? Using the email: michal (at) michalszwedo.com</description>
+    </item>
+    
+    <item>
+      <title>How and why - Hugo?</title>
+      <link>https://michalszwedo.com/posts/living_with_hugo/</link>
+      <pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate>
+      
+      <guid>https://michalszwedo.com/posts/living_with_hugo/</guid>
+      <description>Parameters for local dev environment hugo server -D # Running localhost server - localhost:1313 # -D is responsible for displaying Draft articles on the localhost  # even if they are in the `draft: true` state. hugo # Compiling website into /public Easiest way of deploying only the /public folder with git  Delete public dir and create it again Clone the remote repo with &amp;ldquo;.&amp;rdquo; add the end to unpack in the new public folder  git clone git@github.</description>
     </item>
     
     <item>

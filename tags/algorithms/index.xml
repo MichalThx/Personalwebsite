@@ -8,14 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Sep 2021 20:15:54 +0200</lastBuildDate><atom:link href="https://michalszwedo.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Simple Maths Algorithms</title>
+      <title>Simple Algorithms</title>
       <link>https://michalszwedo.com/posts/living_with_math_and_algorithms/</link>
       <pubDate>Mon, 13 Sep 2021 20:15:54 +0200</pubDate>
       
       <guid>https://michalszwedo.com/posts/living_with_math_and_algorithms/</guid>
-      <description>Safe average of two numbers? The obvious solution $(a + b) / 2$
-This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume the a and b are maximum Integer values available. This makes their sum to be over the capacity. Yielding the incorrect values.
-One could also cast to the more capable type (int -&amp;gt; long) but this is only move the problem a bit, doesn&amp;rsquo;t solve it.</description>
+      <description>Safe average of two numbers Obvious solution $(a + b) / 2$
+This is correct but the danger lies in the overflow issues. Let&amp;rsquo;s assume a and b are the maximum Integer values available (in Java it would be 2147483647). The sum would be over the maximal value. Yielding the incorrect result. One could also cast to the the bigger type (e.g from int to long) but this is not a solution.</description>
     </item>
     
     <item>
