@@ -28,15 +28,6 @@ How to change dates? Changing committer date The author date - using either</des
     </item>
     
     <item>
-      <title>How and why - Hugo?</title>
-      <link>https://michalszwedo.com/posts/living_with_hugo/</link>
-      <pubDate>Tue, 31 Aug 2021 21:14:30 +0200</pubDate>
-      
-      <guid>https://michalszwedo.com/posts/living_with_hugo/</guid>
-      <description>Parameters for local dev environment hugo server -D # Running localhost server - localhost:1313 # -D is responsible for displaying Draft articles on the localhost  # even if they are in the `draft: true` state. hugo # Compiling website into /public Easiest way of deploying only the /public folder with git  Delete public dir and create it again Clone the remote repo with &amp;ldquo;.&amp;rdquo; add the end to unpack in the new public folder  git clone git@github.</description>
-    </item>
-    
-    <item>
       <title>Solving LeetCode 18 - 4sum - Java and Python</title>
       <link>https://michalszwedo.com/posts/leetcode18/</link>
       <pubDate>Sun, 29 Aug 2021 16:15:24 +0200</pubDate>
