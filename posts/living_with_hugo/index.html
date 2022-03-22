@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> How and why - Hugo? | Michał&#39;s website</title>
+  <link rel = 'canonical' href = 'https://michalszwedo.com/posts/living_with_hugo/'>
+  <meta name="description" content="Hi, I&#39;m Michał and this is my corner of the Internet ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="How and why - Hugo?" />
+<meta property="og:description" content="Parameters for local dev environment hugo server -D # Running localhost server - localhost:1313 # -D is responsible for displaying Draft articles on the localhost  # even if they are in the `draft: true` state. hugo # Compiling website into /public Easiest way of deploying only the /public folder with git  Delete public dir and create it again Clone the remote repo with &ldquo;.&rdquo; add the end to unpack in the new public folder  git clone git@github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michalszwedo.com/posts/living_with_hugo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-31T21:14:30+02:00" />
+<meta property="article:modified_time" content="2021-08-31T21:14:30+02:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How and why - Hugo?"/>
+<meta name="twitter:description" content="Parameters for local dev environment hugo server -D # Running localhost server - localhost:1313 # -D is responsible for displaying Draft articles on the localhost  # even if they are in the `draft: true` state. hugo # Compiling website into /public Easiest way of deploying only the /public folder with git  Delete public dir and create it again Clone the remote repo with &ldquo;.&rdquo; add the end to unpack in the new public folder  git clone git@github."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://michalszwedo.com/css/styles.61a0d6f6bdbd2e86f042c15a7a6af40fb37959ad7d945810439d02d600d4f1d328a5360e517a7a985a93a0ff23b405ca76846c8661f45111a08dd3f654433f19.css" integrity="sha512-YaDW9r29LobwQsFaemr0D7N5Wa19lFgQQ50C1gDU8dMopTYOUXp6mFqToP8jtAXKdoRshmH0URGgjdP2VEM/GQ=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  
+  
+
+    <link rel="icon" type="image/png" href="https://michalszwedo.com/images/favicon.svg" />
+
+
+  
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://michalszwedo.com/posts/leetcode18/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://michalszwedo.com/about/" aria-label="Next">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&text=How%20and%20why%20-%20Hugo%3f" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&is_video=false&description=How%20and%20why%20-%20Hugo%3f" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20and%20why%20-%20Hugo%3f&body=Check out this article: https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&name=How%20and%20why%20-%20Hugo%3f&description=Parameters%20for%20local%20dev%20environment%20hugo%20server%20-D%20%23%20Running%20localhost%20server%20-%20localhost%3a1313%20%23%20-D%20is%20responsible%20for%20displaying%20Draft%20articles%20on%20the%20localhost%20%20%23%20even%20if%20they%20are%20in%20the%20%60draft%3a%20true%60%20state.%20hugo%20%23%20Compiling%20website%20into%20%2fpublic%20Easiest%20way%20of%20deploying%20only%20the%20%2fpublic%20folder%20with%20git%20%20Delete%20public%20dir%20and%20create%20it%20again%20Clone%20the%20remote%20repo%20with%20%26ldquo%3b.%26rdquo%3b%20add%20the%20end%20to%20unpack%20in%20the%20new%20public%20folder%20%20git%20clone%20git%40github." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&t=How%20and%20why%20-%20Hugo%3f" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#parameters-for-local-dev-environment">Parameters for local dev environment</a></li>
+    <li><a href="#easiest-way-of-deploying-only-the-public-folder-with-git">Easiest way of deploying only the /public folder with git</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        How and why - Hugo?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-08-31 21:14:30 &#43;0200 CEST" itemprop="datePublished">2021-08-31</time>
+          
+        </div>
+        
+        
+        
+        <div class="article-category">
+            <i class="fas fa-archive"></i>
+            
+            
+            <a class="category-link" href="/categories/webdev">Webdev</a>
+            
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/hugo" rel="tag">Hugo</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/website" rel="tag">Website</a>
+            
+        </div>
+        
+        <div class="article-tag"> 
+          v 1.00 
+        </div>
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <!-- ## Why would you choose hugo for a website?
+
+ -->
+<h2 id="parameters-for-local-dev-environment">Parameters for local dev environment</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
+<span style="color:#75715e"># Running localhost server - localhost:1313</span>
+<span style="color:#75715e"># -D is responsible for displaying Draft articles on the localhost </span>
+<span style="color:#75715e"># even if they are in the `draft: true` state.</span>
+hugo 
+<span style="color:#75715e"># Compiling website into /public</span>
+</code></pre></div><h2 id="easiest-way-of-deploying-only-the-public-folder-with-git">Easiest way of deploying only the /public folder with git</h2>
+<ol>
+<li>Delete public dir and create it again</li>
+<li>Clone the remote repo with &ldquo;.&rdquo; add the end to unpack in the new public folder</li>
+</ol>
+<pre><code class="language-git" data-lang="git">git clone git@github.com:name/name.git .
+</code></pre><ol start="3">
+<li>Run <code>hugo</code> and commit new changes</li>
+<li>Push the commit and the repo is updated</li>
+</ol>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">All posts</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#parameters-for-local-dev-environment">Parameters for local dev environment</a></li>
+    <li><a href="#easiest-way-of-deploying-only-the-public-folder-with-git">Easiest way of deploying only the /public folder with git</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&text=How%20and%20why%20-%20Hugo%3f" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&is_video=false&description=How%20and%20why%20-%20Hugo%3f" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=How%20and%20why%20-%20Hugo%3f&body=Check out this article: https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&title=How%20and%20why%20-%20Hugo%3f" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&name=How%20and%20why%20-%20Hugo%3f&description=Parameters%20for%20local%20dev%20environment%20hugo%20server%20-D%20%23%20Running%20localhost%20server%20-%20localhost%3a1313%20%23%20-D%20is%20responsible%20for%20displaying%20Draft%20articles%20on%20the%20localhost%20%20%23%20even%20if%20they%20are%20in%20the%20%60draft%3a%20true%60%20state.%20hugo%20%23%20Compiling%20website%20into%20%2fpublic%20Easiest%20way%20of%20deploying%20only%20the%20%2fpublic%20folder%20with%20git%20%20Delete%20public%20dir%20and%20create%20it%20again%20Clone%20the%20remote%20repo%20with%20%26ldquo%3b.%26rdquo%3b%20add%20the%20end%20to%20unpack%20in%20the%20new%20public%20folder%20%20git%20clone%20git%40github." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fmichalszwedo.com%2fposts%2fliving_with_hugo%2f&t=How%20and%20why%20-%20Hugo%3f" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2022  Michał&#39;s website 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+<script src=/js/code-copy.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>
